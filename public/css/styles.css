@@ -9,24 +9,37 @@ a{
 }
 body{
     font-size: 12px;
-
-}
- .home header h2{
-    font-family: 'Roboto';
-    text-align: center;
-    font-size:24px;
     
+}
 
-
+.header div.box div.container-1 input#search{
+    margin: 4px;}
+body.home header div.box div.container-1 span.icon{
+    margin:1px ;
+    background-color: white;
+    width: 2em;
+    line-height: 2em;
+    padding: 0%;
+    border-radius: 2%;
+    text-align: center;
+    font-size: 12px;
+    display: inline-flex
+}
+ .home header p {
+    font-family:Roboto;
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 10px;
+    
 }
 
 header{
    background-color:#EAC926;
-  
+     
 }
 
 header section .burger{
-    display: inline-block;
+    display: inline block;
     width:50px;
     background-color: blue;
     color:white;
@@ -36,7 +49,7 @@ header section .burger{
     margin-right: 300px;
     border-radius: 5px;
     height: 35px;
-    
+    text-align: center;
 }
 
 .home header nav ul li {
@@ -46,10 +59,12 @@ header section .burger{
     padding-top: 1px;
     width: 50%;
     font-family: 'Roboto';
-    color: black
-  
+    color:black;
 }
-
+.home header nav ul li a{
+    font-family: 'Roboto';
+    color:black;
+    margin-left: 6px;
 }
 
 /*header section .burger{
@@ -63,7 +78,7 @@ header section .burger{
     border-radius: 5px;
     height: 35px;
     text-align: center;*/
-}
+
 .home .logo{
    width: 50%;
 }
@@ -76,6 +91,7 @@ header section .burger{
     padding: 30px;
     font-size: 30px;
     text-align:center;
+    font-family: roboto;
 }
 .home header section h3{
     font-size: 24px;
@@ -83,27 +99,42 @@ header section .burger{
     margin: 10px 0;
     text-align: center;
 }
-
+/*
 @media (min-width:481px) {
  .banner
+*/
 
-}
 .home main .banner img{
+    display: none;
     width: 100%;
 }
 .home main section article img{
-    width: 90%;
+    width: 100%;
     text-align: center;
-    margin: 15px;
     box-shadow: 0px 0px 10px rgb(100,100,100);
 
 }
-
-main section i{
+*main section i{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+main section nav.truck i{
     color: #39b54a;
-    margin:10px;
-    
-    
+    margin: 4px 4px 4px;
+    background-color: white;
+    width: 30px;
+    line-height: 30px;
+    border: 1px solid #39b54a;
+    border-radius: 200%;
+    text-align: left;
+    /*top:-1px;*/
+    padding: 2px;
+    font-size: 16px;
+    display:block;
+    flex-direction: row-reverse;
+
+     
 }
 .container-2{
     width: 90%;
@@ -112,58 +143,64 @@ main section i{
    
 }
 .caja1{
-    width: 90%;
-    margin: 15px;
+    width: 100%;
     border-top: solid 1px white;
-    padding: 4%;
+    padding: 1px;
     background-color: white;   
     box-shadow: 0px 0px 10px rgb(100,100,100);
+    text-align: center;
 }
-
 .caja2{
-    width: 90%;
-    margin: 15px;
+    width: 100%;
     border-top: solid 1px white;
-    padding: 4%;
+    padding: 1px;
     background-color: white;
     box-shadow: 0px 0px 10px rgb(100,100,100);
+    text-align: center;
 
 }
 .caja3{
-    width:90%;
-    margin:15px;
-    padding: 4%;
+    width:100%;
+    padding: 1px;
     border-top: solid 1px white;
     background-color: white;
     box-shadow: 0px 0px 10px rgb(100,100,100);
 
 }
 .caja4{
-    width:90%;
-    margin:15px;
-    padding: 4%;
+    width:100%;
+    padding: 1px;
     border-top: solid 1px white;
     background-color: white;
     box-shadow: 0px 0px 10px rgb(100,100,100);
 }
-  
- 
+   
 .home main section article h5{
-    font-size: 18px;
+    
+    font-family: Roboto;
+    font-size: 12px;
     text-align: left;
-    margin:0%;
+    margin:4px 0px 1px 5px;
     padding: 0%;
     }
     
 .home main section article h4{
-        font-size: 16px;
-        text-align: left;
+    font-family: Roboto;
+    font-size: 12px;
+    text-align: left;
+    color: #666;
+    margin: 20px 0px 1px 2px;
+    padding: 3px;
     }
 .home main section article p{
-    font-size: 16px;
+       
+    font-family: Roboto;
+    font-size: 10px;
     text-align: left;
     color: #39b54a;
-
+    padding: 0px;
+    font-weight: bold;
+    margin-left: 5px;
 }
 
 .home footer section p{
@@ -174,8 +211,8 @@ main section i{
     
 }
 
-.home footer section p{
-    
+.home footer section {
+    font-family: Roboto;
     text-align: center;
     font-size: 16px;
    
@@ -196,6 +233,7 @@ main section i{
    @media(min-width : 481px) {
     header section .burger{
         display: none;
+    }
         .home main .banner img{
         display: none;
     }
@@ -208,7 +246,3 @@ main section i{
     
    }
 
-
-
-  
-    
