@@ -1,3 +1,12 @@
+:root{
+    --colorAmarillo: #EAC926;
+    --colorAzul: #03264C;
+    --colorCeleste: #1259c3;
+    --colorOscuro: #666;
+    --colorGrisClaro: #ebebeb;
+    --colorVerde: #39b54a;
+}
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -9,22 +18,42 @@ a{
 }
 body{
     font-size: 12px;
-    
+    background-color: var(--colorGrisClaro);
+   
 }
 
-.header div.box div.container-1 input#search{
-    margin: 4px;}
-body.home header div.box div.container-1 span.icon{
-    margin:1px ;
-    background-color: white;
-    width: 2em;
-    line-height: 2em;
-    padding: 0%;
-    border-radius: 2%;
-    text-align: center;
-    font-size: 12px;
-    display: inline-flex
+/*header*/
+
+.home header{
+    background-color: var(--colorAmarillo);
+   padding: 20px;
 }
+
+.home .logo{
+    width: 50%;
+ }
+
+ .home header section{
+     text-align: center;
+     padding: 10px 0;
+ }
+.home header section .buscador{
+   text-align: left;
+}
+
+.home header section .buscador.texto{
+    padding: 5px;
+    height: 30px;
+}
+
+.home header section .buscador i{
+    background-color:  white;
+    padding: 5px;
+    width: 20px;
+    height: 22px;
+    border: 1px solid var(--colorOscuro)
+}
+
  .home header p {
     font-family:Roboto;
     text-align: center;
@@ -32,26 +61,6 @@ body.home header div.box div.container-1 span.icon{
     margin: 10px 10px;
     
 }
-
-header{
-   background-color:#EAC926;
-     
-}
-
-header section .burger{
-    display: inline block;
-    width:50px;
-    background-color: blue;
-    color:white;
-    padding: 10px;
-    margin-bottom: 40px 30px 30px;
-    margin-left: 200px;
-    margin-right: 300px;
-    border-radius: 5px;
-    height: 35px;
-    text-align: center;
-}
-
 .home header nav ul li {
     display:inline-block;
     font-size: 15px; 
@@ -67,27 +76,19 @@ header section .burger{
     margin-left: 6px;
 }
 
-/*header section .burger{
-    display: inline-block;
-    width:50px;
-    background-color: blue;
-    color: white;
-    padding: 10px;
-    margin-bottom: 40px 30px 30px;
-    margin-left: 200px;
-    border-radius: 5px;
-    height: 35px;
-    text-align: center;*/
+/*main*/
 
-.home .logo{
-   width: 50%;
+.home main{
+    width: 90%;
+    margin:0 auto;
 }
 
 .home main{
     background-color: #ebebeb;
 }
 .home main section h2{
-    background-color: #ebebeb;
+    
+    color: var(--colorOscuro);
     padding: 30px;
     font-size: 30px;
     text-align:center;
@@ -99,82 +100,55 @@ header section .burger{
     margin: 10px 0;
     text-align: center;
 }
-/*
-@media (min-width:481px) {
- .banner
-*/
+
+.home header section nav.nav-menu{
+    display: none;
+}
+
+.home header section nav .burger-menu{
+    display: block;
+    text-align: center;
+    width: 35px;
+    height: 27px;
+    color:white;
+    padding: 5px 5px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: var(--colorCeleste)
+
+}
 
 .home main .banner img{
     display: none;
     width: 100%;
 }
+
+.home main section article{
+    background-color: white;
+    margin-bottom: 10px;
+}
 .home main section article img{
     width: 100%;
     text-align: center;
-    box-shadow: 0px 0px 10px rgb(100,100,100);
-
+    border-bottom: 1px solid var(--colorGrisClaro);
 }
+
+
 *main section i{
     margin:0px;
     padding: 0px;
     box-sizing: border-box;
 }
-main section nav.truck i{
-    color: #39b54a;
-    margin: 4px 4px 4px;
-    background-color: white;
-    width: 30px;
-    line-height: 30px;
+.home main section article div .camion i{
+    color: var(--colorVerde);
     border: 1px solid #39b54a;
-    border-radius: 200%;
-    text-align: left;
-    /*top:-1px;*/
-    padding: 2px;
-    font-size: 16px;
-    display:block;
-    flex-direction: row-reverse;
-
-     
+    border-radius: 50%;
+    padding: 8px;
 }
-.container-2{
-    width: 90%;
-    border-top: solid 15px#ebebeb;
-    text-align:left;
-   
+.home main section article .card-detail{
+    padding: 20px;
 }
-.caja1{
-    width: 100%;
-    border-top: solid 1px white;
-    padding: 1px;
-    background-color: white;   
-    box-shadow: 0px 0px 10px rgb(100,100,100);
-    text-align: center;
-}
-.caja2{
-    width: 100%;
-    border-top: solid 1px white;
-    padding: 1px;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgb(100,100,100);
-    text-align: center;
-
-}
-.caja3{
-    width:100%;
-    padding: 1px;
-    border-top: solid 1px white;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgb(100,100,100);
-
-}
-.caja4{
-    width:100%;
-    padding: 1px;
-    border-top: solid 1px white;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgb(100,100,100);
-}
-   
+    
 .home main section article h5{
     
     font-family: Roboto;
@@ -182,16 +156,18 @@ main section nav.truck i{
     text-align: left;
     margin:4px 0px 1px 5px;
     padding: 0%;
-    }
+ }
     
 .home main section article h4{
     font-family: Roboto;
-    font-size: 12px;
+    font-size: 1.5rem;
     text-align: left;
-    color: #666;
-    margin: 20px 0px 1px 2px;
-    padding: 3px;
-    }
+    color:var(--colorOscuro);
+    margin-top: 5px;
+    display: none;
+      
+ }
+
 .home main section article p{
        
     font-family: Roboto;
@@ -200,49 +176,71 @@ main section nav.truck i{
     color: #39b54a;
     padding: 0px;
     font-weight: bold;
-    margin-left: 5px;
+    
 }
 
-.home footer section p{
-    
-    margin-top:10px;
-    padding: 0%;
-    
-    
+/*footer*/
+
+.home footer{
+    background-color: white;
 }
 
 .home footer section {
     font-family: Roboto;
     text-align: center;
     font-size: 16px;
-   
+    margin: 0 auto;
+    width: 90%;
+   padding: 20px 0;
  }
+ .home footer section .icon{
+     margin-bottom: 10px;
+
+ }
+
+ .home footer section i{
+    color: #1259c3;
+    text-align: center;
+    font-size: 2rem;
+ }
+
+.home footer section p{
+    
+    margin-top:10px;
+    padding: 0%;
+}
 
 .home footer section h3{
     text-align: center;
    
 }
-
-.home footer section i{
-    color: #1259c3;
-    text-align: center;
-    }
-
    
-   /*tablet*/
-   @media(min-width : 481px) {
-    header section .burger{
-        display: none;
-    }
-        .home main .banner img{
-        display: none;
-    }
-      /*header*/
-   }
-   @media(min-width : 481px) {
-    .home main .banner img{
-        display: none;
-    }
-    
-   }
+   
+    @media (min-width:425px){
+     /*Header*/
 
+    .home header section nav .burger-menu{
+           display: none;
+    }
+
+    .home header section nav.nav-menu{
+        display: block;
+        text-align: left;
+    }
+    .home header section nav ul.login{
+        margin-top: 20px;
+    }
+
+     /*main*/
+     
+    .home main section article h4{
+        display: block;
+    }
+
+    @media (min-width:768px){
+ 
+    }
+   .home main section article{
+    box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+    }
+    }

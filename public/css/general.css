@@ -6,10 +6,10 @@ font-family: 'Roboto';
 }
 
 :root{
-    --colorAmarillo: "#EAC926";
-    --colorAzul: "#03264C";
-    --colorCeleste: "#1259c3";
-    --colorOscuro: "#666";
-    --colorGrisClaro: "#ebebeb";
+    --colorAmarillo: #EAC926;
+    --colorAzul: #03264C;
+    --colorCeleste: #1259c3;
+    --colorOscuro: #666;
+    --colorGrisClaro: #ebebeb;
     --colorVerde: #39b54a;
 }
