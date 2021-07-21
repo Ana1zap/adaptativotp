@@ -25,8 +25,9 @@ body{
 /*header*/
 
 .home header{
-    background-color: var(--colorAmarillo);
-   padding: 20px;
+   background-color: var(--colorAmarillo);
+   margin: 0;
+   width: 100%;
 }
 
 .home .logo{
@@ -38,20 +39,26 @@ body{
      padding: 10px 0;
  }
 .home header section .buscador{
-   text-align: left;
+   text-align: center;
+   padding: 40px;
+      
 }
 
 .home header section .buscador.texto{
-    padding: 5px;
+    padding: 8px; 
     height: 30px;
+    border-right: white;
+    
 }
 
 .home header section .buscador i{
+         
     background-color:  white;
-    padding: 5px;
+    padding: 3px; 
     width: 20px;
-    height: 22px;
-    border: 1px solid var(--colorOscuro)
+    height: 16px;
+    border-right: white;
+  
 }
 
  .home header p {
@@ -64,17 +71,25 @@ body{
 .home header nav ul li {
     display:inline-block;
     font-size: 15px; 
-    margin-top: 3px ;
+    margin-top: 1px ;
     padding-top: 1px;
     width: 50%;
     font-family: 'Roboto';
     color:black;
 }
 .home header nav ul li a{
+    
     font-family: 'Roboto';
     color:black;
     margin-left: 6px;
+    
 }
+
+
+/*header nav ul{
+    display:flex;
+    justify-content: center;
+}*/
 
 /*main*/
 
@@ -87,12 +102,15 @@ body{
     background-color: #ebebeb;
 }
 .home main section h2{
-    
+    display:block;
     color: var(--colorOscuro);
-    padding: 30px;
+    padding: 10px;
     font-size: 30px;
-    text-align:center;
+    justify-content: center;
     font-family: roboto;
+    margin: 30px;
+    width: 100%;
+    
 }
 .home header section h3{
     font-size: 24px;
@@ -126,13 +144,17 @@ body{
 .home main section article{
     background-color: white;
     margin-bottom: 10px;
+    
+    
 }
 .home main section article img{
+    
     width: 100%;
     text-align: center;
     border-bottom: 1px solid var(--colorGrisClaro);
+  
+    
 }
-
 
 *main section i{
     margin:0px;
@@ -140,14 +162,31 @@ body{
     box-sizing: border-box;
 }
 .home main section article div .camion i{
+    display: block;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    position:absolute;
+    right: 15%;
+     
     color: var(--colorVerde);
     border: 1px solid #39b54a;
     border-radius: 50%;
-    padding: 8px;
+    padding: 10px;
+    text-align: center;
+   
 }
 .home main section article .card-detail{
-    padding: 20px;
+    padding: 5px;
 }
+
+.home main section article span{
+    margin-top: 30px;
+    font-family: roboto;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}   
+
     
 .home main section article h5{
     
@@ -169,14 +208,15 @@ body{
  }
 
 .home main section article p{
-       
+           
     font-family: Roboto;
     font-size: 10px;
     text-align: left;
     color: #39b54a;
-    padding: 0px;
     font-weight: bold;
+    padding:0px;
     
+       
 }
 
 /*footer*/
@@ -214,33 +254,128 @@ body{
     text-align: center;
    
 }
-   
-   
+      
     @media (min-width:425px){
      /*Header*/
+    
+     .home header section .buscador{
+        display: flex;
+        justify-content: flex-end;
+                 
+     }
+     .home header section .buscador i class{
+        display: flex;
+        justify-content: flex-end;
+     }
 
-    .home header section nav .burger-menu{
+     .home header section nav .burger-menu{
            display: none;
     }
 
     .home header section nav.nav-menu{
-        display: block;
-        text-align: left;
+        display: flex;
+              
     }
-    .home header section nav ul.login{
-        margin-top: 20px;
+    .home header nav ul{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+        border: 2px;
+        justify-content: stretch;
+        padding-right: 70px;
+        padding-left: 50px;
     }
 
+    .home header section nav ul.login{
+      display: flex;
+      justify-content: space-between;
+       margin: 30px;
+      justify-content: start;
+      padding-left: 60px;
+      border:40px;
+        
+    }
+
+    .home main section article p{
+           display: inline-flex;
+           padding: 30px;
+           padding-right: 50px;
+    }
+
+
+    .home main section article div .camion i{
+        display: block;
+        font-size: 16px;
+        width: 40px;
+        height: 40px;
+        position:relative;
+        right: 2%;
+         
+        color: var(--colorVerde);
+        border: 1px solid #39b54a;
+        border-radius: 50%;
+        padding: 10px;
+        text-align: right;
+    }
      /*main*/
      
     .home main section article h4{
         display: block;
     }
+    main section{
+        
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+    
+        article {
+        width:45%;
+        flex-wrap: wrap;
+        padding: 1px;
+           
+        }
 
+
+    
     @media (min-width:768px){
- 
+
+   .home main .banner img{
+       display: flex;
+       width: 100%;
+       padding: 10px 0px;
+   
     }
-   .home main section article{
-    box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+    .home main section article{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+            
     }
+    .home main section h2{
+        display:flex;
+        color: var(--colorOscuro);
+        padding: 30px;
+        font-size: 30px;
+        justify-content: center;
+        
+        margin: 30px;
+        
     }
+
+    main section{
+        
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+    article {
+    width:25%;
+    flex-wrap: wrap;
+    padding: 1px;
+       
+    }
+    }   
+
+}
+         
+
