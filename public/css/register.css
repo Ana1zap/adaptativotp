@@ -1,0 +1,71 @@
+home header{
+    background-color: var(--colorAmarillo);
+    margin: 0;
+    width: 100%;
+ }
+
+.register main{
+    width: 350px;
+    height: 40vh;
+    margin: 0 auto;
+}
+
+.register .box-form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.register h2{
+    margin: 20px 0;
+}
+.register .box-form input{
+    margin: 5px 0;
+    height: 30px;
+    border-radius: 7px;
+    color: white;
+    border: white;
+    font-size: 12px;
+    padding: 10px 0;
+    
+}
+
+.register main form div.box-form span{
+    color:crimson;
+}
+
+.register .box-form-Int{
+    display: flex;
+    flex-direction: column;
+}
+.register .box-form-Int label{
+    font-size: 18px;
+    padding: 2 12px;
+   
+
+}
+.register .box-form-Int label{
+    display: flex;
+    align-items: center;
+}
+    
+
+.register .box-form-Perfil label{
+    font-size: 17px;
+    padding: 0 30px;
+    margin-bottom: 20px;
+    text-align: center;
+   
+}
+.register main form div.box-form button{
+
+    margin: 5px 0;
+    height: 30px;
+    border-radius: 7px;
+    border: white;
+    font-size: 12px;
+    padding: 10px 0;
+    color:white;
+    background-color: blue;
+
+
+}

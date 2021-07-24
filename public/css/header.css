@@ -1,0 +1,60 @@
+home header{
+    background-color: var(--colorAmarillo);
+    margin: 0;
+    width: 100%;
+ }
+ 
+ home .logo{
+     width: 50%;
+  }
+ 
+  home header section{
+      text-align: center;
+      padding: 10px 0;
+  }
+ home header section .buscador{
+    text-align: center;
+    padding: 40px;
+       
+ }
+ 
+ home header section .buscador.texto{
+     padding: 8px; 
+     height: 30px;
+     border-right: white;
+     
+ }
+ 
+ home header section .buscador i{
+          
+     background-color:  white;
+     padding: 3px; 
+     width: 20px;
+     height: 16px;
+     border-right: white;
+   
+ }
+ 
+ home header p {
+     font-family:Roboto;
+     text-align: center;
+     font-size: 14px;
+     margin: 10px 10px;
+     
+ }
+ home header nav ul li {
+     display:inline-block;
+     font-size: 15px; 
+     margin-top: 1px ;
+     padding-top: 1px;
+     width: 50%;
+     font-family: 'Roboto';
+     color:black;
+ }
+ home header nav ul li a{
+     
+     font-family: 'Roboto';
+     color:black;
+     margin-left: 6px;
+     
+ }

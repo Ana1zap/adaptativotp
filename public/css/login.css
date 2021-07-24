@@ -1,0 +1,35 @@
+.home header{
+
+    background-color: var(--colorAmarillo);
+    margin: 0;
+    width: 100%;
+ }
+
+.login main{
+    width: 350px;
+    height: 40vh;
+    margin: 0 auto;
+}
+.login .box-form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.login main form div.box-form input{
+    padding: 10px 0;
+    height: 20px 0;
+    color: white;
+    border:white;
+    border-radius: 6px;
+}
+
+
+.login main form button{
+    font-size: large;
+    color:white;
+    background-color: blue;
+    padding: 10px 0;
+    height: 20px 0;
+    border-radius: 7px;
+}

@@ -1,3 +1,10 @@
+@import url("./general.css");
+@import url(":/header.css");
+@import url("./footer.css");
+@import url("./home.css");
+@import url("./register.css");
+@import url("./login.css");
+
 :root{
     --colorAmarillo: #EAC926;
     --colorAzul: #03264C;
