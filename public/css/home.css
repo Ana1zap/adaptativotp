@@ -1,6 +1,106 @@
 
-.home header{
-    background-color: var(--colorAmarillo);
-    margin: 0;
+ /*main*/
+
+.home main{
     width: 100%;
+    margin:0 auto;
+}
+
+.home main{
+    background-color: #ebebeb;
+}
+.home main section h2{
+    display:block;
+    color: var(--colorOscuro);
+    padding: 10px;
+    font-size: 30px;
+    justify-content: center;
+    font-family: roboto;
+    margin: 30px;
+    width: 100%;
+}
+
+.home main .banner img{
+    display: none;
+    width: 90%;
+   
+}
+
+.home main section article{
+    background-color: white;
+    margin-bottom: 10px;
+    
+    
+}
+.home main section article img{
+    
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--colorGrisClaro);
+  
+    
+}
+
+.home main section i{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.home main section article div .camion i{
+    display: block;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    position:absolute;
+    right: 15%;
+     
+    color: var(--colorVerde);
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+   
+}
+.home main section article .card-detail{
+    padding: 5px;
+    position: relative;
+}
+
+.home main section article span{
+    margin-top: 30px;
+    font-family: roboto;
+    padding-top: 31px;
+    flex-wrap: wrap;
+}   
+
+    
+.home main section article h5{
+    
+    font-family: Roboto;
+    font-size: 12px;
+    text-align: left;
+    margin:4px 0px 1px 5px;
+    padding: 0%;
  }
+    
+.home main section article h4{
+    font-family: Roboto;
+    font-size: 1.5rem;
+    text-align: left;
+    color:var(--colorOscuro);
+    margin-top: 5px;
+    display: none;
+      
+ }
+
+.home main section article p{
+           
+    font-family: Roboto;
+    font-size: 10px;
+    text-align: left;
+    color: #39b54a;
+    font-weight: bold;
+    padding:0px;
+    
+       
+}

@@ -1,31 +1,32 @@
-home header{
+header{
     background-color: var(--colorAmarillo);
     margin: 0;
     width: 100%;
  }
  
- home .logo{
+header .logo{
      width: 50%;
   }
  
-  home header section{
+header section{
       text-align: center;
       padding: 10px 0;
   }
- home header section .buscador{
+header section .buscador{
     text-align: center;
     padding: 40px;
        
  }
  
- home header section .buscador.texto{
+header section .buscador.texto{
      padding: 8px; 
      height: 30px;
      border-right: white;
+     border:white
      
  }
  
- home header section .buscador i{
+header section .buscador i{
           
      background-color:  white;
      padding: 3px; 
@@ -35,14 +36,14 @@ home header{
    
  }
  
- home header p {
+header p {
      font-family:Roboto;
      text-align: center;
      font-size: 14px;
      margin: 10px 10px;
      
  }
- home header nav ul li {
+header nav ul li {
      display:inline-block;
      font-size: 15px; 
      margin-top: 1px ;
@@ -51,10 +52,96 @@ home header{
      font-family: 'Roboto';
      color:black;
  }
- home header nav ul li a{
+header nav ul li a{
      
      font-family: 'Roboto';
      color:black;
      margin-left: 6px;
      
  }
+ /*header*/
+
+header{
+    background-color: var(--colorAmarillo);
+    margin: 0;
+    width: 100%;
+ }
+ 
+header .logo{
+     margin:0;
+     width: 40%;
+  }
+
+ header section{
+      text-align: center;
+      padding: 10px 0;
+  }
+ header section .buscador{
+    text-align: center;
+    padding: 40px;
+       
+ }
+ 
+ header section .buscador.texto{
+     padding: 8px; 
+     height: 30px;
+     border-right: white;
+     
+ }
+ 
+header section .buscador i{
+          
+     background-color:  white;
+     padding: 3px; 
+     width: 20px;
+     height: 16px;
+     border-right: white;
+   
+ }
+ 
+header p {
+     font-family:Roboto;
+     text-align: center;
+     font-size: 14px;
+     margin: 10px 10px;
+     
+ }
+ header nav ul li {
+     display:inline-block;
+     font-size: 15px; 
+     margin-top: 1px ;
+     padding-top: 1px;
+     width: 50%;
+     font-family: 'Roboto';
+     color:black;
+ }
+ header nav ul li a{
+     
+     font-family: 'Roboto';
+     color:black;
+     margin-left: 6px;
+ } 
+
+ header section h3{
+    font-size: 24px;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+header section nav.nav-menu{
+    display: none;
+}
+
+header section nav .burger-menu{
+    display: block;
+    text-align: center;
+    width: 35px;
+    height: 27px;
+    color:white;
+    padding: 5px 5px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: var(--colorCeleste)
+
+}

@@ -1,0 +1,36 @@
+/*footer*/
+
+.home footer{
+    background-color: white;
+}
+
+.home footer section {
+       
+    font-family: Roboto;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto;
+    width: 90%;
+    padding: 20px 0;
+ }
+ .home footer section .icon{
+     margin-bottom: 10px;
+
+ }
+
+ .home footer section i{
+    color: #1259c3;
+    text-align: center;
+    font-size: 2rem;
+ }
+
+.home footer section p{
+    
+    margin-top:10px;
+    padding: 0%;
+}
+
+.home footer section h3{
+    text-align: center;
+   
+}

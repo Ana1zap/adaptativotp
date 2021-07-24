@@ -1,5 +1,5 @@
 @import url("./general.css");
-@import url(":/header.css");
+@import url("./header.css");
 @import url("./footer.css");
 @import url("./home.css");
 @import url("./register.css");
@@ -29,68 +29,8 @@ body{
    
 }
 
-/*header*/
 
-.home header{
-   background-color: var(--colorAmarillo);
-   margin: 0;
-   width: 100%;
-}
 
-.home .logo{
-    width: 50%;
- }
-
- .home header section{
-     text-align: center;
-     padding: 10px 0;
- }
-.home header section .buscador{
-   text-align: center;
-   padding: 40px;
-      
-}
-
-.home header section .buscador.texto{
-    padding: 8px; 
-    height: 30px;
-    border-right: white;
-    
-}
-
-.home header section .buscador i{
-         
-    background-color:  white;
-    padding: 3px; 
-    width: 20px;
-    height: 16px;
-    border-right: white;
-  
-}
-
- .home header p {
-    font-family:Roboto;
-    text-align: center;
-    font-size: 14px;
-    margin: 10px 10px;
-    
-}
-.home header nav ul li {
-    display:inline-block;
-    font-size: 15px; 
-    margin-top: 1px ;
-    padding-top: 1px;
-    width: 50%;
-    font-family: 'Roboto';
-    color:black;
-}
-.home header nav ul li a{
-    
-    font-family: 'Roboto';
-    color:black;
-    margin-left: 6px;
-    
-}
 
 
 /*header nav ul{
@@ -98,134 +38,7 @@ body{
     justify-content: center;
 }*/
 
-/*main*/
 
-.home main{
-    width: 90%;
-    margin:0 auto;
-}
-
-.home main{
-    background-color: #ebebeb;
-}
-.home main section h2{
-    display:block;
-    color: var(--colorOscuro);
-    padding: 10px;
-    font-size: 30px;
-    justify-content: center;
-    font-family: roboto;
-    margin: 30px;
-    width: 100%;
-    
-}
-.home header section h3{
-    font-size: 24px;
-    padding: 0;
-    margin: 10px 0;
-    text-align: center;
-}
-
-.home header section nav.nav-menu{
-    display: none;
-}
-
-.home header section nav .burger-menu{
-    display: block;
-    text-align: center;
-    width: 35px;
-    height: 27px;
-    color:white;
-    padding: 5px 5px;
-    margin: 10px auto;
-    border-radius: 5px;
-    background-color: var(--colorCeleste)
-
-}
-
-.home main .banner img{
-    display: none;
-    width: 100%;
-}
-
-.home main section article{
-    background-color: white;
-    margin-bottom: 10px;
-    
-    
-}
-.home main section article img{
-    
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid var(--colorGrisClaro);
-  
-    
-}
-
-*main section i{
-    margin:0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-.home main section article div .camion i{
-    display: block;
-    font-size: 16px;
-    width: 40px;
-    height: 40px;
-    position:absolute;
-    right: 15%;
-     
-    color: var(--colorVerde);
-    border: 1px solid #39b54a;
-    border-radius: 50%;
-    padding: 10px;
-    text-align: center;
-   
-}
-.home main section article .card-detail{
-    padding: 5px;
-    position: relative;
-}
-
-.home main section article span{
-    margin-top: 30px;
-    font-family: roboto;
-    padding-top: 31px;
-    flex-wrap: wrap;
-}   
-
-    
-.home main section article h5{
-    
-    font-family: Roboto;
-    font-size: 12px;
-    text-align: left;
-    margin:4px 0px 1px 5px;
-    padding: 0%;
- }
-    
-.home main section article h4{
-    font-family: Roboto;
-    font-size: 1.5rem;
-    text-align: left;
-    color:var(--colorOscuro);
-    margin-top: 5px;
-    display: none;
-      
- }
-
-.home main section article p{
-           
-    font-family: Roboto;
-    font-size: 10px;
-    text-align: left;
-    color: #39b54a;
-    font-weight: bold;
-    padding:0px;
-    
-       
-}
 
 /*footer*/
 
@@ -234,12 +47,13 @@ body{
 }
 
 .home footer section {
+       
     font-family: Roboto;
     text-align: center;
     font-size: 16px;
     margin: 0 auto;
     width: 90%;
-   padding: 20px 0;
+    padding: 20px 0;
  }
  .home footer section .icon{
      margin-bottom: 10px;
@@ -266,25 +80,25 @@ body{
     @media (min-width:425px){
      /*Header*/
     
-     .home header section .buscador{
+     header section .buscador{
         display: flex;
         justify-content: flex-end;
                  
      }
-     .home header section .buscador i class{
+     header section .buscador i class{
         display: flex;
         justify-content: flex-end;
      }
 
-     .home header section nav .burger-menu{
+     header section nav .burger-menu{
            display: none;
     }
 
-    .home header section nav.nav-menu{
+     header section nav.nav-menu{
         display: flex;
               
     }
-    .home header nav ul{
+     header nav ul{
         display: flex;
         justify-content: space-between;
         margin: 30px;
@@ -294,7 +108,7 @@ body{
         padding-left: 50px;
     }
 
-    .home header section nav ul.login{
+     header section nav ul.login{
       display: flex;
       justify-content: space-between;
       margin: 30px;
