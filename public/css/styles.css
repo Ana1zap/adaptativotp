@@ -98,7 +98,7 @@ body{
         display: flex;
               
     }
-     header nav ul{
+    /* header nav ul{
         display: flex;
         justify-content: space-between;
         margin: 30px;
@@ -116,7 +116,7 @@ body{
       padding-left: 20%;
       border:40px;
         
-    }
+    }*/
 
     .home main section article p{
            display: inline-flex;
